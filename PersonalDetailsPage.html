@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+    <title>PersonalDetailsPage</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="script.js"></script>
+</head>
+<body> 
+    <div  class="container">
+        <form name="myForm" action="/SubmitPage.html" method="post" id="submit" onsubmit="return validateForm()" required>
+                    Full Name:<input type="text" id="fullname" placeholder="Enter Full Name" required><br>
+                    E-Mail:<input type="email" id="email" placeholder="Email id" required><br>
+                    Phone Number:<input type="text" id="phone" Placeholder="Phone Number" maxlength="12" required><br>
+                
+                <div class="button">
+                    <input type="button" value="Submit" name="submit" onclick="validateFunc()">
+                    <input type="reset" value="reset" id="cleartext">
+                </div>
+            </div>
+    </form>
+    </div>
+</body>
+</html>

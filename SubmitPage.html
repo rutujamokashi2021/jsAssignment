@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+    <title>SubmitPage</title>
+    
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div  class="container_sub">
+        <form >         
+                <div class="view">
+                    <p>Dear 
+                        <label type="text" id="lable" value=" "></label>,
+                        <script>	var secform = document.getElementById('lable').value;
+                            document.getElementById("fullname").innerHTML = secform;</script>
+                        Thank you for your inquiry.<br>
+                        A 4 digit verification number has been sent to your phone number: <valid phone number from
+                        previous page> <br>
+                        <h4>please enter in the following box and submit for confirmation:</h4>
+                        Text box for OTP and 'Validate' button.</p>
+                    
+                   <input type="text" name="otp" ><br>
+                   <input type="button" value="Validate" id="gen_otp" onclick="otpFunc()">
+                   <input type="reset" value="Reset" id="cleartext">
+                   <input type="button" value="Home" name="back" onclick="backFunc()">
+                </div>
+            </div>
+    </form>
+    </div>
+</body>
+</html>
